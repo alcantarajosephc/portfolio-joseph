@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Experience } from '../interface/experience';
-import experiences from "../../assets/experiences.json";
+import experiences from "../../../public/assets/experiences.json";
 
 @Component({
   selector: 'app-home',
