@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Experience } from '../interface/experience';
 import { CommonModule } from '@angular/common';
+import { Experience } from '../interface/experience';
 import experiences from "../../assets/experiences.json";
 
 @Component({
