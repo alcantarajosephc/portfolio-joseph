@@ -23,13 +23,13 @@
   </div>
   <div class="experience" id="experience">
     <h2 class="section-title">Experience</h2>
-    <div class="job">
-      <div class="job-date">{{ experience1.date }}</div>
+    <div class="job" *ngFor="let experience of experienceData">
+      <div class="job-date">{{ experience.date }}</div>
       <div class="job-details">
-        <h3>{{ experience1.position }}</h3>
-        <p>{{ experience1.description }}</p>
-        <div class="tags">
-            <span class="tag" *ngFor="let skill of experience1.skills">{{ skill }}</span>
+        <h3>{{ experience.position }} | {{ experience.company }}</h3>
+        <p>{{ experience.description }}</p>
+        <div class="skills">
+            <span class="skill" *ngFor="let skill of experience.skills">{{ skill }}</span>
         </div>
       </div>
     </div>

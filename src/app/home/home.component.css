@@ -140,17 +140,19 @@
     line-height: 1.6;
   }
   
-  .tags {
+  .skills {
     margin-top: 10px;
   }
   
-  .tag {
+  .skill {
     display: inline-block;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    color: #56d5c4;
+    background-color: #122b39;
     padding: 5px 10px;
     margin: 5px 5px 0 0;
     border-radius: 3px;
     font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
   }
   

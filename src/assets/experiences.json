@@ -1,0 +1,44 @@
+{"experiences": 
+    [
+        {
+        "id": 0,
+        "date": "April 2022 — Present",
+        "position": "Software Engineer 2",
+        "company": "Isentia",
+        "description": "Design, develop and deploy a solution using C#/VB.net web & inhouse application that is used in the Media monitoring industry. Design, develop and deploy a Python solution to scrape data in a web application using AWS Technologies. Design, develop and deploy an Angular web application to do a transcription of a video content.",
+        "skills": ["JavaScript", "TypeScript", "Angular", "Node.js", "C#", "VB", ".Net", "Lambda", "Python", "CloudWatch", "DynamoDB", "MS SQL", "Datadog", "AWS"]
+        },
+        {
+        "id": 1,
+        "date": "May 2021 — March 2022",
+        "position": "Global IT Digital Application Support Sr. Analyst",
+        "company": "Goodyear",
+        "description": "Design, develop and deploy a Solution using C#/ReactJS used in Tire industry using Azure Technologies (App Service, Azure Sql). Sharepoint technology with Javascript components",
+        "skills": ["JavaScript", "C#", ".Net", "MS SQL", "HTML & CSS", "React", "Sharepoint", "Azure App Service", "Azure Sql"]
+        },
+        {
+            "id": 2,
+            "date": "November 2017 — April 2021",
+            "position": "Software Engineer",
+            "company": "Infor PSSC, Inc.",
+            "description": "Design, develop and deploy an ERP Solution using Proprietary language combined with .NET frameworks using C# and VB programming language with SQL Database.",
+            "skills": ["JavaScript", "C#", "VB", ".Net", "HTML & CSS", "MS SQL", "NUnit Testing (TDD/TFD)"]
+        },
+        {
+            "id": 3,
+            "date": "June 2017 — November 2021",
+            "position": "Senior Software Engineer",
+            "company": "SPi Global",
+            "description": "Design, develop and deploy a Content acquisition Web application using PHP (Laravel Framework) with MySQL/PostgreSQL. Design, develop and deploy a Console application written in C#.net to automate content acquisition process. Design, develop and deploy a web scraping tools using Python (Scrappy framework).",
+            "skills": ["JavaScript", "PHP", "Laravel", "Python", "My SQL", "Postgre SQL", "C#", ".Net", "HTML & CSS", "MS SQL"]
+        },
+        {
+            "id": 4,
+            "date": "October 2015 — June 2017",
+            "position": "Software Engineer 2",
+            "company": "Medilink Network Inc.",
+            "description": "Design and develop technical solutions for a Healthcare web application using C#.net with SQL Database.",
+            "skills": ["JavaScript", "C#", "VB", ".Net", "HTML & CSS", "MS SQL", "Elixir (Phoenix Framework)"]
+        }
+    ]
+}
