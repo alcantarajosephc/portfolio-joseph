@@ -31,7 +31,7 @@ jobs:
       run: npx eslint src/**
 
     - name: Build
-      run: npm run build
+      run: npm run build:prod
 
     - name: Clear S3
       if: success()
