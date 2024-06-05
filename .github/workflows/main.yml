@@ -35,8 +35,8 @@ jobs:
 
     - name: Clear S3
       if: success()
-      run: aws s3 rm s3://josephalcantara --exclude "*" --include "*.txt" --include "*.js" --include "*.ico" --include "*.html" --include "*.css"
+      run: aws s3 rm s3://www.alcantarajoseph.com --exclude "*" --include "*.txt" --include "*.js" --include "*.ico" --include "*.html" --include "*.css"
 
     - name: Deploy
       if: success()
-      run: aws s3 sync ./dist/portfolio-joseph/browser s3://josephalcantara --cache-control "max-age=0"
+      run: aws s3 sync ./dist/portfolio-joseph/browser s3://www.alcantarajoseph.com --cache-control "max-age=0"
