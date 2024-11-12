@@ -5,7 +5,7 @@
         "date": "April 2022 — Present",
         "position": "Software Engineer 2",
         "company": "Isentia",
-        "description": "Design, develop and deploy a solution using C#/VB.net web & inhouse application that is used in the Media monitoring industry. Design, develop and deploy a Python solution to scrape data in a web application using AWS Technologies. Design, develop and deploy an Angular web application to do a transcription of a video content.",
+        "description": "Design, develop and deploy a solution using C#/VB.net/Angular web & inhouse application that is used in the Media monitoring industry. Design, develop and deploy a Python solution to scrape data in a web application using AWS Technologies. Design, develop and deploy an Angular web application to do a transcription of a video content.",
         "skills": ["JavaScript", "TypeScript", "Angular", "Node.js", "C#", "VB", ".Net", "Lambda", "Python", "CloudWatch", "DynamoDB", "MS SQL", "Datadog", "AWS"]
         },
         {
