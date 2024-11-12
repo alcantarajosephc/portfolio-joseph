@@ -1,35 +1,39 @@
 <div class="navbar">
-    <nav class="menu">
-      <a href="#about">[0]. About</a>
-      <a href="#contact">[1]. Contact</a>
-      <a href="#experience">[2]. Experience</a>
-      <a href="/assets/Alcantara-Joseph-Resume.pdf" target="_blank" class="resume-button">Resume</a>
-    </nav>
+  <nav class="menu">
+    <a href="#about">[0]. About</a>
+    <a href="#contact">[1]. Contact</a>
+    <a href="#experience">[2]. Experience</a>
+    <a href="/assets/Alcantara-Joseph-Resume.pdf" target="_blank" class="resume-button">Resume</a>
+  </nav>
+</div>
+<header class="header" id="about">
+  <div class="intro">
+    <p class="intro-text">Hi, my name is</p>
+    <h1 class="name">{{ fullName }}.</h1>
+    <h2 class="title">Software Engineer.</h2>
+    <p class="description">with 9 years of expertise in developing, designing, maintaining, and enhancing web
+      applications, in-house applications, and cloud ERP solutions for various industries.</p>
+    <p class="description">With my extensive experience in C#.net, VB.net, Python, PHP, Typescript, Javascript and other
+      programming languages, I have been able to produce quality, readable, and reusable codes while applying best
+      practices used in software development.</p>
   </div>
-  <div class="header" id="about">
-    <div class="intro">
-      <p class="intro-text">Hi, my name is</p>
-      <h1 class="name">{{ fullName }}.</h1>
-      <h2 class="title">Software Engineer.</h2>
-      <p class="description">with 8 years of expertise in developing, designing, maintaining, and enhancing web applications, in-house applications, and cloud ERP solutions for various industries.</p>
-      <p class="description">With my extensive experience in C#.net, VB.net, Python, PHP, Typescript, Javascript and other programming languages, I have been able to produce quality, readable, and reusable codes while applying best practices used in software development.</p>
-    </div>
-    <div class="social-icons" id="contact">
-      <a href="https://github.com/kontrasenyas" target="_blank" aria-label="GitHub" class="social-icon">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://linkedin.com/in/alcantarajosephc" target="_blank" aria-label="LinkedIn" class="social-icon">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="mailto:info@alcantarajoseph.com" target="_blank" aria-label="Email" class="social-icon">
-        <i class="fas fa-envelope"></i>
-      </a>
-      <a href="tel:+639177129286" target="_blank" aria-label="Contact Number" class="social-icon">
-        <i class="fas fa-phone"></i>
-      </a>
-    </div>
+  <div class="social-icons" id="contact">
+    <a href="https://github.com/kontrasenyas" target="_blank" aria-label="GitHub" class="social-icon">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://linkedin.com/in/alcantarajosephc" target="_blank" aria-label="LinkedIn" class="social-icon">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="mailto:info@alcantarajoseph.com" target="_blank" aria-label="Email" class="social-icon">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <a href="tel:+639177129286" target="_blank" aria-label="Contact Number" class="social-icon">
+      <i class="fas fa-phone"></i>
+    </a>
   </div>
-  <div class="experience" id="experience">
+</header>
+<main>
+  <section class="experience" id="experience">
     <h2 class="section-title">Experience</h2>
     <div class="job" *ngFor="let experience of experienceData">
       <div class="job-date">{{ experience.date }}</div>
@@ -37,13 +41,15 @@
         <h3>{{ experience.position }} | {{ experience.company }}</h3>
         <p>{{ experience.description }}</p>
         <div class="skills">
-            <span class="skill" *ngFor="let skill of experience.skills">{{ skill }}</span>
+          <span class="skill" *ngFor="let skill of experience.skills">{{ skill }}</span>
         </div>
       </div>
     </div>
-    <a id="resume" href="/assets/Alcantara-Joseph-Resume.pdf" target="_blank" class="cta-button">Check out my Full Resume!</a>
-  </div>
-  
+    <a id="resume" href="/assets/Alcantara-Joseph-Resume.pdf" target="_blank" class="cta-button">Check out my Full
+      Resume!</a>
+  </section>
+</main>
+
 <!-- Footer Section -->
 <footer class="footer">
   <p class="footer-text">This website was created using Angular, deployed using GitHub Actions, and hosted on AWS.</p>
