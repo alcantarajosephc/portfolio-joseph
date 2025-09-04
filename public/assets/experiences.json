@@ -26,7 +26,7 @@
         },
         {
             "id": 3,
-            "date": "June 2017 — November 2021",
+            "date": "June 2017 — November 2017",
             "position": "Senior Software Engineer",
             "company": "SPi Global",
             "description": "Design, develop and deploy a Content acquisition Web application using PHP (Laravel Framework) with MySQL/PostgreSQL. Design, develop and deploy a Console application written in C#.net to automate content acquisition process. Design, develop and deploy a web scraping tools using Python (Scrappy framework).",
