@@ -1,12 +1,27 @@
 {"experiences": 
     [
         {
-        "id": 0,
-        "date": "April 2022 — Present",
-        "position": "Software Engineer 2",
-        "company": "Isentia",
-        "description": "Design, develop and deploy a solution using C#/VB.net/Angular web & inhouse application that is used in the Media monitoring industry. Design, develop and deploy a Python solution to scrape data in a web application using AWS Technologies. Design, develop and deploy an Angular web application to do a transcription of a video content.",
-        "skills": ["JavaScript", "TypeScript", "Angular", "Node.js", "C#", "VB", ".Net", "Lambda", "Python", "CloudWatch", "DynamoDB", "MS SQL", "Datadog", "AWS"]
+          "id": 0,
+          "date": "April 2022 — Present",
+          "position": "Software Engineer II",
+          "company": "Isentia",
+          "description": "Design, develop, and deploy enterprise-grade web and in-house applications using C# and VB.NET to support large-scale media monitoring and intelligence systems. Architect and build Angular web applications in a monorepo setup for searching, filtering, and processing high volumes of online content. Develop and maintain data processing pipelines that ingest, normalize, and match internet content to client-specific requirements. Build Python-based data ingestion and scraping solutions using AWS services for scalable and reliable processing.",
+          "skills": [
+            "C#",
+            "VB.NET",
+            ".NET",
+            "Angular",
+            "TypeScript",
+            "JavaScript",
+            "Python",
+            "AWS Lambda",
+            "API Gateway",
+            "DynamoDB",
+            "SQS",
+            "CloudWatch",
+            "MS SQL",
+            "Datadog"
+          ]
         },
         {
         "id": 1,
