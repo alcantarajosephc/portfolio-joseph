@@ -13,8 +13,8 @@ import experiences from "../../../public/assets/experiences.json";
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit {
-  fullName: string = 'Joseph Alcantara';
-  description: string = 'Software Engineer with 9 years of expertise in web applications, cloud ERP solutions, and various programming languages.';
+  fullName: string = 'Joseph C. Alcantara';
+  description: string = 'Senior Software Engineer with 10+ years of experience designing, building, and maintaining enterprise-scale systems, data pipelines, and cloud-based applications across ANZ and SEA markets.';
   experienceData: Experience[] = experiences.experiences;
 
 
@@ -24,14 +24,14 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.title.setTitle('Joseph Alcantara - Software Engineer');
+    this.title.setTitle('Joseph C. Alcantara - Senior Software Engineer / Senior Full Stack Engineer');
 
     this.meta.addTags([
       { name: 'description', content: this.description },
-      { name: 'keywords', content: 'Software Engineer, Web Development, C#.NET, Python, PHP, TypeScript, JavaScript, Angular' },
-      { name: 'author', content: 'Joseph Alcantara' },
+      { name: 'keywords', content: 'Senior Software Engineer, Senior Full Stack Engineer, Web Development, C#.NET, Angular, AWS, Azure, Data Pipelines, Enterprise Systems, TypeScript, JavaScript' },
+      { name: 'author', content: 'Joseph C. Alcantara' },
       { name: 'robots', content: 'index, follow' },
-      { property: 'og:title', content: 'Joseph Alcantara - Software Engineer' },
+      { property: 'og:title', content: 'Joseph C. Alcantara - Senior Software Engineer / Senior Full Stack Engineer' },
       { property: 'og:description', content: this.description },
       { property: 'og:type', content: 'website' }
     ]);
@@ -43,8 +43,8 @@ export class HomeComponent implements OnInit {
     const schema = {
       '@context': 'http://schema.org',
       '@type': 'Person',
-      'name': 'Joseph Alcantara',
-      'jobTitle': 'Software Engineer',
+      'name': 'Joseph C. Alcantara',
+      'jobTitle': 'Senior Software Engineer / Senior Full Stack Engineer',
       'description': this.description,
       'sameAs': [
         'https://github.com/kontrasenyas',
