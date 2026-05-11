@@ -2,7 +2,24 @@
     [
         {
           "id": 0,
-          "date": "April 2022 — Present",
+          "date": "February 2026 — Present",
+          "position": "Sr. Full-Stack Developer",
+          "company": "IQ BackOffice",
+          "description": "Develop and maintain enterprise web applications using C#, Java, .NET, Angular, SQL Server, and AWS for the Finance and Accounting industry.",
+          "skills": [
+            "Java",
+            "C#",
+            ".NET",
+            "Angular",
+            "TypeScript",
+            "JavaScript",
+            "System Architecture",
+            "Performance Optimization"
+          ]
+        },
+        {
+          "id": 1,
+          "date": "April 2022 — February 2026",
           "position": "Software Engineer II",
           "company": "Isentia",
           "description": "Design, develop, and maintain enterprise-scale web and data processing systems supporting media intelligence platforms across ANZ and SEA regions. Architect and develop Angular applications within a monorepo, powering internal tools for searching, filtering, and analyzing millions of news and online content items daily. Designed and owned high-volume data pipelines responsible for ingesting, normalizing, and processing content from news sites, blogs, and social media platforms. Led performance optimization initiatives, reducing processing time by approximately 40–50% on critical systems handling large-scale datasets. Owned multiple backend services end-to-end, including a Press/Newspaper ingestion pipeline, assuming full responsibility after team transitions. Serve as a technical escalation point, resolving complex production issues and system failures. Review code, mentor junior engineers, and contribute to architectural and technology decisions across a portfolio of ~20 internal applications. Build and deploy cloud-based ingestion and scraping solutions using AWS (Lambda, API Gateway, DynamoDB, SQS, CloudWatch). Collaborate with distributed engineering teams across multiple countries.",
@@ -26,7 +43,7 @@
           ]
         },
         {
-        "id": 1,
+        "id": 2,
         "date": "May 2021 — March 2022",
         "position": "Global IT Digital Application Support Sr. Analyst",
         "company": "Goodyear",
@@ -34,7 +51,7 @@
         "skills": ["JavaScript", "C#", ".NET", "MS SQL Server", "HTML & CSS", "React", "SharePoint", "Azure App Service", "Azure SQL"]
         },
         {
-            "id": 2,
+            "id": 3,
             "date": "November 2017 — April 2021",
             "position": "Software Engineer",
             "company": "Infor PSSC, Inc.",
@@ -42,7 +59,7 @@
             "skills": ["JavaScript", "C#", "VB.NET", ".NET", "HTML & CSS", "MS SQL Server", "ERP Systems", "Agile/Scrum"]
         },
         {
-            "id": 3,
+            "id": 4,
             "date": "June 2017 — November 2017",
             "position": "Senior Software Engineer",
             "company": "SPi Global",
@@ -50,7 +67,7 @@
             "skills": ["JavaScript", "PHP", "Laravel", "Python", "MySQL", "PostgreSQL", "C#", ".NET", "HTML & CSS", "Scrapy"]
         },
         {
-            "id": 4,
+            "id": 5,
             "date": "October 2015 — June 2017",
             "position": "Software Engineer II",
             "company": "Medilink Network Inc.",

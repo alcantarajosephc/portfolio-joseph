@@ -71,14 +71,14 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
 
   readonly stats: StatItem[] = [
     { value: 10, suffix: '+', label: 'Years of Experience'   },
-    { value: 5,  suffix: '',  label: 'Companies'             },
+    { value: 6,  suffix: '',  label: 'Companies'             },
     { value: 20, suffix: '+', label: 'Internal Applications' },
     { value: 9,  suffix: '+', label: 'Technologies'          },
   ];
 
   readonly skillGroups: SkillGroup[] = [
     { label: 'Languages',
-      skills: ['C#', 'VB.NET', 'TypeScript', 'JavaScript', 'Python', 'PHP', 'HTML & CSS'] },
+      skills: ['C#', 'VB.NET', 'TypeScript', 'JavaScript', 'Python', 'PHP', 'HTML & CSS', 'Java'] },
     { label: 'Frameworks & Libraries',
       skills: ['Angular', '.NET', 'React', 'Laravel', 'Scrapy'] },
     { label: 'Cloud & DevOps',
