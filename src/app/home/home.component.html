@@ -1,65 +1,158 @@
-<div class="navbar">
-  <nav class="menu">
-    <a href="#about">[0]. About</a>
-    <a href="#contact">[1]. Contact</a>
-    <a href="#experience">[2]. Experience</a>
-    <a href="/assets/Alcantara-Joseph-Resume.pdf" target="_blank" class="resume-button">Resume</a>
-  </nav>
+<!-- Custom cursor (hidden on touch devices via CSS) -->
+<div class="cursor-dot"  #cursorDot></div>
+<div class="cursor-ring" #cursorRing></div>
+
+<!-- ── NAVBAR ── -->
+<nav class="navbar" #navbar>
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">JA</a>
+    <ul class="nav-links">
+      <li><a href="#about"      (click)="closeMobileMenu()">About</a></li>
+      <li><a href="#skills"     (click)="closeMobileMenu()">Skills</a></li>
+      <li><a href="#experience" (click)="closeMobileMenu()">Experience</a></li>
+      <li><a href="#contact"    (click)="closeMobileMenu()">Contact</a></li>
+      <li><a href="/assets/Alcantara-Joseph-Resume.pdf" target="_blank" class="nav-resume">Resume</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Toggle menu" (click)="toggleMobileMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" [class.open]="mobileMenuOpen">
+  <a href="#about"      (click)="closeMobileMenu()">About</a>
+  <a href="#skills"     (click)="closeMobileMenu()">Skills</a>
+  <a href="#experience" (click)="closeMobileMenu()">Experience</a>
+  <a href="#contact"    (click)="closeMobileMenu()">Contact</a>
+  <a href="/assets/Alcantara-Joseph-Resume.pdf" target="_blank" (click)="closeMobileMenu()">Resume</a>
 </div>
-<header class="header" id="about">
-  <div class="intro">
-    <p class="intro-text">Hi, my name is</p>
-    <h1 class="name">{{ fullName }}.</h1>
-    <h2 class="title">Senior Software Engineer / Senior Full Stack Engineer.</h2>
-    <p class="description">
-      Senior Software Engineer with 10+ years of experience designing, building, and maintaining enterprise-scale systems, data pipelines, and cloud-based applications across ANZ and SEA markets. Strong background in C#/.NET, Angular, and cloud platforms (AWS & Azure), with hands-on experience handling high-volume data processing (millions of records per day), system modernization, and performance optimization.
-    </p>
-    <p class="description">
-      Recognized as a go-to engineer for complex debugging, backend logic, and critical systems, frequently trusted to own services end-to-end, mentor junior engineers, review code, and influence technical decisions. Actively pursuing senior roles with a clear trajectory toward Tech Lead or Architect responsibilities, focused on scalable design, reliability, and long-term maintainability.
-    </p>
+
+<!-- ── HERO ── -->
+<section class="hero" id="hero">
+  <canvas class="particle-canvas" #particleCanvas></canvas>
+  <div class="hero-content">
+    <p  class="hero-greeting" #heroGreeting>Hi, I'm</p>
+    <h1 class="hero-name"     #heroName>Joseph Alcantara</h1>
+    <h2 class="hero-title"    #heroTitle>
+      <span class="hero-static">Software Engineer &nbsp;·&nbsp; </span><span
+            class="hero-typewriter" #heroTypewriter></span>
+    </h2>
+    <div class="hero-cta" #heroCta>
+      <a href="#experience" class="btn-primary">View My Work</a>
+      <a href="#contact"    class="btn-outline">Contact Me</a>
+    </div>
   </div>
-  <div class="social-icons" id="contact">
-    <a href="https://github.com/alcantarajosephc" target="_blank" aria-label="GitHub" class="social-icon">
-      <i class="fab fa-github"></i>
-    </a>
-    <a href="https://linkedin.com/in/alcantarajosephc" target="_blank" aria-label="LinkedIn" class="social-icon">
-      <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="mailto:info@alcantarajoseph.com" target="_blank" aria-label="Email" class="social-icon">
-      <i class="fas fa-envelope"></i>
-    </a>
-    <a href="tel:+639177129286" target="_blank" aria-label="Contact Number" class="social-icon">
-      <i class="fas fa-phone"></i>
-    </a>
+  <div class="scroll-indicator" #scrollIndicator>
+    <div class="scroll-arrow"></div>
   </div>
-</header>
-<main>
-  <section class="experience" id="experience">
-    <h2 class="section-title">Experience</h2>
-    <div class="job" *ngFor="let experience of experienceData">
-      <div class="job-date">{{ experience.date }}</div>
-      <div class="job-details">
-        <h3>{{ experience.position }} | {{ experience.company }}</h3>
-        <p>{{ experience.description }}</p>
-        <div class="skills">
-          <span class="skill" *ngFor="let skill of experience.skills">{{ skill }}</span>
+</section>
+
+<!-- ── ABOUT ── -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-bio">
+        <h2 class="section-heading">About Me</h2>
+        <p>
+          Senior Software Engineer with 10+ years of experience designing, building, and
+          maintaining enterprise-scale systems, data pipelines, and cloud-based applications
+          across ANZ and SEA markets. Strong background in C#/.NET, Angular, and cloud
+          platforms (AWS &amp; Azure), with hands-on experience handling high-volume data
+          processing of millions of records per day, system modernization, and performance
+          optimization.
+        </p>
+        <p>
+          Recognized as a go-to engineer for complex debugging, backend logic, and critical
+          systems — frequently trusted to own services end-to-end, mentor junior engineers,
+          review code, and influence technical decisions. Actively pursuing senior roles with
+          a clear trajectory toward Tech Lead or Architect responsibilities, focused on
+          scalable design, reliability, and long-term maintainability.
+        </p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card" *ngFor="let stat of stats">
+          <span class="stat-value">
+            <span class="stat-number" [attr.data-target]="stat.value">0</span>{{ stat.suffix }}
+          </span>
+          <span class="stat-label">{{ stat.label }}</span>
         </div>
       </div>
     </div>
-    <a id="resume" href="/assets/Alcantara-Joseph-Resume.pdf" target="_blank" class="cta-button">Check out my Full
-      Resume!</a>
-  </section>
-</main>
-
-<!-- Footer Section -->
-<footer class="footer">
-  <p class="footer-text">This website was created using Angular, deployed using GitHub Actions, and hosted on AWS.</p>
-  <div class="footer-icons">
-    <i class="fab fa-angular"></i>
-    <i class="fab fa-github"></i>
-    <i class="fas fa-cloud"></i>
   </div>
-  <p class="footer-source">
-    <a href="https://github.com/kontrasenyas/portfolio-joseph" target="_blank" class="source-link">View Source Code</a>
-  </p>
+</section>
+
+<!-- ── SKILLS ── -->
+<section class="skills-section" id="skills">
+  <div class="container">
+    <h2 class="section-heading centered">Tech Stack</h2>
+    <div class="skills-groups">
+      <div class="skill-group" *ngFor="let group of skillGroups">
+        <p class="skill-group-label">{{ group.label }}</p>
+        <div class="skill-badges">
+          <span class="skill-badge" *ngFor="let skill of group.skills">{{ skill }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── EXPERIENCE ── -->
+<section class="experience" id="experience">
+  <div class="container">
+    <h2 class="section-heading centered">Work History</h2>
+    <div class="timeline">
+      <div class="timeline-line" #timelineLine></div>
+      <div
+        class="timeline-item"
+        [class.right]="i % 2 !== 0"
+        *ngFor="let exp of experienceData; let i = index"
+      >
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-date">{{ exp.date }}</div>
+          <h3 class="timeline-position">{{ exp.position }}</h3>
+          <div class="timeline-company">{{ exp.company }}</div>
+          <p class="timeline-desc">{{ exp.description }}</p>
+          <div class="timeline-skills">
+            <span class="skill-tag" *ngFor="let skill of exp.skills">{{ skill }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="resume-cta">
+      <a href="/assets/Alcantara-Joseph-Resume.pdf" target="_blank" class="btn-primary">
+        View Full Resume
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-wrap">
+      <h2 class="section-heading centered">Get In Touch</h2>
+      <p class="contact-sub">
+        I'm currently open to new opportunities. Whether you have a question or just want
+        to say hi — my inbox is always open!
+      </p>
+      <div class="social-links">
+        <a href="https://github.com/alcantarajosephc"       target="_blank" aria-label="GitHub"   class="social-link"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/alcantarajosephc"  target="_blank" aria-label="LinkedIn" class="social-link"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:info@alcantarajoseph.com"                           aria-label="Email"    class="social-link"><i class="fas fa-envelope"></i></a>
+        <a href="tel:+639177129286"                                         aria-label="Phone"    class="social-link"><i class="fas fa-phone"></i></a>
+      </div>
+      <a href="mailto:info@alcantarajoseph.com" class="btn-primary">Say Hello</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>Built with ❤️ by Joseph Alcantara &nbsp;·&nbsp; Angular · AWS · GitHub Actions</p>
+    <p>
+      <a href="https://github.com/kontrasenyas/portfolio-joseph" target="_blank">View Source Code</a>
+    </p>
+    <p class="footer-copy">&copy; {{ currentYear }} Joseph C. Alcantara</p>
+  </div>
 </footer>
