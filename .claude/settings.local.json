@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"D:\\\\angular project\\\\portfolio-joseph\" -Recurse -Force)",
+      "Bash(Select-Object -Property FullName)",
+      "Bash(not exist *)",
+      "Bash(npm install *)",
+      "Bash(npx eslint *)",
+      "Bash(npm run *)",
+      "Bash(npm start *)",
+      "Bash(Start-Sleep -Seconds 10)",
+      "Bash(Get-Content \"C:\\\\Users\\\\Admin\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\D--angular-project-portfolio-joseph\\\\5ba6cb01-34b7-412e-ab93-3f790f3e9767\\\\tasks\\\\b8j9dgpx2.output\")"
+    ]
+  }
+}
