@@ -10,6 +10,15 @@ import experiences from '../../../public/assets/experiences.json';
 
 interface StatItem  { value: number; suffix: string; label: string; }
 interface SkillGroup { label: string; skills: string[]; }
+interface ProjectLink { label: string; url: string; }
+interface ProjectItem {
+  name: string;
+  badge?: string;
+  role: string;
+  description: string;
+  tags: string[];
+  links: ProjectLink[];
+}
 
 @Component({
   selector: 'app-home',
@@ -46,6 +55,27 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
       skills: ['MS SQL Server', 'MySQL', 'PostgreSQL'] },
     { label: 'Practices & Tools',
       skills: ['Data Pipelines', 'System Architecture', 'Performance Optimization', 'ERP Systems', 'Agile/Scrum', 'SharePoint', 'MVC', 'N-tier Architecture'] },
+  ];
+
+  readonly projects: ProjectItem[] = [
+    {
+      name: 'Siomai King Franchising',
+      badge: '#1 on Google Search · 5+ years running',
+      role: 'Solo — build, custom theme & SEO',
+      description: 'Franchise opportunities platform for a Philippine food-business group spanning seven food brands plus a delivery-logistics franchise arm. Built on WordPress with a custom theme, on-page SEO, and performance tuning that has held the #1 organic ranking for its category for over five years.',
+      tags: ['WordPress', 'PHP', 'SEO', 'Performance Optimization'],
+      links: [{ label: 'Visit Site', url: 'https://siomaikingfranchising.com/' }],
+    },
+    {
+      name: 'SanTayo',
+      role: 'Web co-authored with my brother · Android built solo',
+      description: 'Restaurant discovery app for Bonifacio Global City — filters dining spots by craving (Light, Filling, Healthy, Comfort) for fast, personalized recommendations, available as a website and a native Android app.',
+      tags: ['Web App', 'Android', 'Google Play'],
+      links: [
+        { label: 'Visit Site', url: 'https://santayo.ph/' },
+        { label: 'Get it on Google Play', url: 'https://play.google.com/store/apps/details?id=com.santayo.saantayokakain' },
+      ],
+    },
   ];
 
   private scrollHandler?: () => void;
