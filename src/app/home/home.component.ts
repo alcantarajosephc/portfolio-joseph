@@ -39,10 +39,10 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
   readonly experienceData: Experience[] = experiences.experiences;
 
   readonly stats: StatItem[] = [
-    { value: 10, suffix: '+', label: 'Years of Experience'   },
-    { value: 6,  suffix: '',  label: 'Companies'             },
-    { value: 20, suffix: '+', label: 'Internal Applications' },
-    { value: 9,  suffix: '+', label: 'Technologies'          },
+    { value: 10, suffix: '+', label: 'Years of Experience'    },
+    { value: 6,  suffix: '',  label: 'Industries Served'      },
+    { value: 20, suffix: '+', label: 'Internal Applications'  },
+    { value: 40, suffix: '%', label: 'Faster Critical Systems'},
   ];
 
   readonly skillGroups: SkillGroup[] = [
@@ -69,6 +69,7 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
     },
     {
       name: 'SanTayo',
+      badge: 'LIVE ON WEB & GOOGLE PLAY',
       role: 'Web co-authored with my brother · Android built solo',
       description: 'Restaurant discovery app for Bonifacio Global City — filters dining spots by craving (Light, Filling, Healthy, Comfort) for fast, personalized recommendations, available as a website and a native Android app.',
       tags: ['Web App', 'Android', 'Google Play'],

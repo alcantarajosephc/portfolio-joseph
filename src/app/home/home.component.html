@@ -7,7 +7,7 @@
       <li><a href="#skills"     (click)="closeMobileMenu()">Skills</a></li>
       <li><a href="#projects"   (click)="closeMobileMenu()">Projects</a></li>
       <li><a href="#experience" (click)="closeMobileMenu()">Experience</a></li>
-      <li><a href="#services"   (click)="closeMobileMenu()">Services</a></li>
+      <li><a routerLink="/services" (click)="closeMobileMenu()">Services</a></li>
       <li><a href="#contact"    (click)="closeMobileMenu()">Contact</a></li>
       <li><a href="/assets/Alcantara-Joseph-Resume.pdf" target="_blank" class="nav-resume">Resume</a></li>
     </ul>
@@ -21,7 +21,7 @@
   <a href="#skills"     (click)="closeMobileMenu()">Skills</a>
   <a href="#projects"   (click)="closeMobileMenu()">Projects</a>
   <a href="#experience" (click)="closeMobileMenu()">Experience</a>
-  <a href="#services"   (click)="closeMobileMenu()">Services</a>
+  <a routerLink="/services" (click)="closeMobileMenu()">Services</a>
   <a href="#contact"    (click)="closeMobileMenu()">Contact</a>
   <a href="/assets/Alcantara-Joseph-Resume.pdf" target="_blank" (click)="closeMobileMenu()">Resume</a>
 </div>
@@ -31,7 +31,7 @@
   <div class="hero-content">
     <p class="hero-eyebrow">Senior Software Engineer</p>
     <h1 class="hero-name">Joseph Alcantara</h1>
-    <h2 class="hero-title">Full-Stack Development · Cloud ERP Solutions · Data Pipelines</h2>
+    <h2 class="hero-title">C#/.NET · Angular · AWS &amp; Azure · Data&nbsp;Pipelines</h2>
     <div class="hero-cta">
       <a href="#experience" class="btn-primary">View My Work</a>
       <a href="#contact"    class="btn-outline">Contact Me</a>
@@ -107,29 +107,6 @@
   </div>
 </section>
 
-<!-- ── EXPERIENCE ── -->
-<section class="experience" id="experience">
-  <div class="container">
-    <h2 class="section-heading centered">Work History</h2>
-    <div class="experience-list">
-      <div class="experience-card" *ngFor="let exp of experienceData">
-        <div class="experience-date">{{ exp.date }}</div>
-        <h3 class="experience-position">{{ exp.position }}</h3>
-        <div class="experience-company">{{ exp.company }}</div>
-        <p class="experience-desc">{{ exp.description }}</p>
-        <div class="experience-skills">
-          <span class="skill-tag" *ngFor="let skill of exp.skills">{{ skill }}</span>
-        </div>
-      </div>
-    </div>
-    <div class="resume-cta">
-      <a href="/assets/Alcantara-Joseph-Resume.pdf" target="_blank" class="btn-primary">
-        View Full Resume
-      </a>
-    </div>
-  </div>
-</section>
-
 <!-- ── SERVICES TEASER ── -->
 <section class="services-teaser" id="services">
   <div class="container">
@@ -148,14 +125,38 @@
   </div>
 </section>
 
+<!-- ── EXPERIENCE ── -->
+<section class="experience" id="experience">
+  <div class="container">
+    <h2 class="section-heading centered">Work History</h2>
+    <div class="experience-list">
+      <div class="experience-card" *ngFor="let exp of experienceData">
+        <div class="experience-date">{{ exp.date }}</div>
+        <h3 class="experience-position">{{ exp.position }}</h3>
+        <div class="experience-company">{{ exp.company }}</div>
+        <p class="experience-desc">{{ exp.description }}</p>
+        <p class="experience-desc" *ngFor="let bullet of exp.bullets || []">• {{ bullet }}</p>
+        <div class="experience-skills">
+          <span class="skill-tag" *ngFor="let skill of exp.skills">{{ skill }}</span>
+        </div>
+      </div>
+    </div>
+    <div class="resume-cta">
+      <a href="/assets/Alcantara-Joseph-Resume.pdf" target="_blank" class="btn-primary">
+        View Full Resume
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- ── CONTACT ── -->
 <section class="contact" id="contact">
   <div class="container">
     <div class="contact-wrap">
       <h2 class="section-heading centered">Get In Touch</h2>
       <p class="contact-sub">
-        I'm currently open to new opportunities. Whether you have a question or just want
-        to say hi — my inbox is always open!
+        Open to senior engineering roles — and select client projects. Tell me what you're
+        working on, and I'll get back to you within a day.
       </p>
       <div class="social-links">
         <a href="https://github.com/alcantarajosephc"       target="_blank" aria-label="GitHub"   class="social-link"><i class="fab fa-github"></i></a>

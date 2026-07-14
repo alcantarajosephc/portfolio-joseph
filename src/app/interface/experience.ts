@@ -4,5 +4,6 @@ export interface Experience {
     position: string;
     company: string;
     description: string;
+    bullets?: string[];
     skills: string[];
 }

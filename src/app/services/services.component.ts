@@ -28,12 +28,19 @@ export class ServicesComponent implements OnInit {
   mobileMenuOpen = false;
 
   readonly introHeadline = 'I build software for businesses that are tired of doing things manually.';
-  readonly introSubhead = 'Senior engineer with 10+ years shipping systems for companies like Goodyear and Infor — and I run my own business, so I know what "we don\'t have time for this" actually feels like. I take on a limited number of client projects alongside my full-time work.';
+  readonly introSubhead = 'Senior engineer with 10+ years shipping systems for companies like Goodyear and Infor — and years of hands-on work with a food franchise business, so I know what "we don\'t have time for this" actually feels like. I take on a limited number of client projects alongside my full-time work.';
 
   readonly trustItems: string[] = [
     '10+ Years Experience',
-    'Finance · Manufacturing · Media',
-    'I run a business too',
+    '6 Industries Served',
+    'Healthcare · Legal · ERP',
+    'Manufacturing · Media · Finance',
+  ];
+
+  readonly proofPoints: string[] = [
+    '#1 on Google for 5+ years — siomaikingfranchising.com (built & SEO\'d solo)',
+    'Data pipelines processing millions of records daily at enterprise scale',
+    '40–50% processing time reduction on critical high-volume systems',
   ];
 
   readonly services: ServiceItem[] = [
@@ -49,28 +56,28 @@ export class ServicesComponent implements OnInit {
       description: 'You don\'t need to replace anything. I connect AI to your existing tools so customer inquiries get answered instantly, emails get sorted and drafted automatically, and data gets pulled out of forms and documents without anyone retyping it.',
       chips: ['Customer service chatbots', 'Email triage & auto-replies', 'Form & document data extraction', 'FAQ automation'],
       ctaLabel: 'See what AI can take off your plate',
-      mailSubject: 'Project inquiry: AI Integration',
+      mailSubject: 'Project inquiry: AI Integration & Workflow Automation',
     },
     {
       headline: 'Stop paying people to copy-paste',
       description: 'If your team spends hours moving data between systems, generating the same reports, or chasing paperwork — that\'s a process I can automate. The work still gets done. It just gets done in seconds, without errors, at 2 AM if it has to.',
       chips: ['Invoice & billing automation', 'Form-to-CRM pipelines', 'Automated reports', 'Data entry elimination'],
       ctaLabel: 'Show me your most repetitive task',
-      mailSubject: 'Project inquiry: Process Automation',
+      mailSubject: 'Project inquiry: Business Process Automation',
     },
     {
       headline: 'That old system your business runs on? I can bring it into 2026.',
       description: 'I\'ve spent a decade working with .NET and enterprise systems, which means I can read the old code nobody wants to touch. I\'ll move it to the web, to the cloud, or to something your new hires can actually learn — without breaking what works.',
       chips: ['Desktop-to-web migration', '.NET upgrades', 'Database modernization', '"The one guy who built it left" rescues'],
       ctaLabel: 'Tell me about your legacy system',
-      mailSubject: 'Project inquiry: Legacy Modernization',
+      mailSubject: 'Project inquiry: Legacy System Modernization',
     },
     {
       headline: 'Move to the cloud — or stop overpaying for it',
       description: 'I migrate systems to AWS, Azure, or Google Cloud with proper planning, so there\'s no surprise downtime. Already in the cloud? I\'ll audit your setup and find where you\'re paying for capacity you don\'t use. It\'s usually more than you think.',
       chips: ['Cloud migration', 'Hosting cost audits', 'Backup & disaster recovery', 'Server optimization'],
       ctaLabel: 'Get a cloud health check',
-      mailSubject: 'Project inquiry: Cloud Migration',
+      mailSubject: 'Project inquiry: Cloud Migration & Cost Optimization',
     },
   ];
 

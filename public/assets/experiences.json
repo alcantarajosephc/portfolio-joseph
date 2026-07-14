@@ -22,7 +22,13 @@
           "date": "April 2022 — February 2026",
           "position": "Software Engineer II",
           "company": "Isentia",
-          "description": "Design, develop, and maintain enterprise-scale web and data processing systems supporting media intelligence platforms across ANZ and SEA regions. Architect and develop Angular applications within a monorepo, powering internal tools for searching, filtering, and analyzing millions of news and online content items daily. Designed and owned high-volume data pipelines responsible for ingesting, normalizing, and processing content from news sites, blogs, and social media platforms. Led performance optimization initiatives, reducing processing time by approximately 40–50% on critical systems handling large-scale datasets. Owned multiple backend services end-to-end, including a Press/Newspaper ingestion pipeline, assuming full responsibility after team transitions. Serve as a technical escalation point, resolving complex production issues and system failures. Review code, mentor junior engineers, and contribute to architectural and technology decisions across a portfolio of ~20 internal applications. Build and deploy cloud-based ingestion and scraping solutions using AWS (Lambda, API Gateway, DynamoDB, SQS, CloudWatch). Collaborate with distributed engineering teams across multiple countries.",
+          "description": "Design, develop, and maintain enterprise-scale web and data processing systems supporting media intelligence platforms across ANZ and SEA.",
+          "bullets": [
+            "Own high-volume data pipelines ingesting and processing millions of news/social items daily",
+            "Led performance optimizations cutting processing time by 40–50% on critical systems",
+            "Technical escalation point across ~20 internal applications; review code and mentor junior engineers",
+            "Build cloud ingestion/scraping solutions on AWS (Lambda, API Gateway, DynamoDB, SQS, CloudWatch)"
+          ],
           "skills": [
             "C#",
             "VB.NET",
