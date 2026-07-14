@@ -1,0 +1,87 @@
+<!-- ── NAVBAR ── -->
+<nav class="navbar scrolled">
+  <div class="nav-inner">
+    <a routerLink="/" class="nav-logo">JA</a>
+    <ul class="nav-links">
+      <li><a routerLink="/">Home</a></li>
+      <li><a routerLink="/services">Services</a></li>
+      <li><a href="#contact-cta" (click)="closeMobileMenu()">Contact</a></li>
+      <li><a href="/assets/Alcantara-Joseph-Resume.pdf" target="_blank" class="nav-resume">Resume</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Toggle menu" (click)="toggleMobileMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" [class.open]="mobileMenuOpen">
+  <a routerLink="/"               (click)="closeMobileMenu()">Home</a>
+  <a routerLink="/services"       (click)="closeMobileMenu()">Services</a>
+  <a href="#contact-cta"          (click)="closeMobileMenu()">Contact</a>
+  <a href="/assets/Alcantara-Joseph-Resume.pdf" target="_blank" (click)="closeMobileMenu()">Resume</a>
+</div>
+
+<!-- ── INTRO ── -->
+<section class="services-intro">
+  <div class="container">
+    <div class="services-intro-content">
+      <h1 class="services-headline">{{ introHeadline }}</h1>
+      <p class="services-subhead">{{ introSubhead }}</p>
+      <div class="trust-strip">
+        <span class="trust-item" *ngFor="let item of trustItems">{{ item }}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SERVICES ── -->
+<section class="services-list">
+  <div class="container">
+    <div class="service-row" *ngFor="let service of services">
+      <h2 class="service-headline">{{ service.headline }}</h2>
+      <p class="service-desc">{{ service.description }}</p>
+      <div class="service-chips">
+        <span class="skill-tag" *ngFor="let chip of service.chips">{{ chip }}</span>
+      </div>
+      <a [href]="mailtoFor(service)" class="project-link">{{ service.ctaLabel }} →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── HOW WE'D WORK TOGETHER ── -->
+<section class="work-steps">
+  <div class="container">
+    <h2 class="section-heading centered">How We'd Work Together</h2>
+    <div class="work-steps-row">
+      <ng-container *ngFor="let step of workSteps; let last = last">
+        <span class="work-step">{{ step.label }}</span>
+        <span class="work-step-arrow" *ngIf="!last" aria-hidden="true">→</span>
+      </ng-container>
+    </div>
+  </div>
+</section>
+
+<!-- ── GLOBAL CTA ── -->
+<section class="contact" id="contact-cta">
+  <div class="container">
+    <div class="contact-wrap">
+      <h2 class="section-heading centered">Have a project or a problem?</h2>
+      <p class="contact-sub">
+        Send me a message describing it in your own words — no technical spec needed. I'll tell
+        you honestly whether it's worth building, what it'd roughly cost, and whether I'm the
+        right person for it.
+      </p>
+      <a [href]="globalCtaHref" class="btn-primary">Let's talk</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>Built by Joseph Alcantara &nbsp;·&nbsp; Angular · AWS · GitHub Actions</p>
+    <p>
+      <a href="https://github.com/kontrasenyas/portfolio-joseph" target="_blank">View Source Code</a>
+    </p>
+    <p class="footer-copy">&copy; {{ currentYear }} Joseph C. Alcantara</p>
+  </div>
+</footer>

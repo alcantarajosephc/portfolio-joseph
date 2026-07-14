@@ -4,6 +4,7 @@ import {
 } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { Meta, Title } from '@angular/platform-browser';
+import { RouterLink } from '@angular/router';
 
 import { Experience } from '../interface/experience';
 import experiences from '../../../public/assets/experiences.json';
@@ -23,7 +24,7 @@ interface ProjectItem {
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   providers: [Title, Meta],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
@@ -76,6 +77,14 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
         { label: 'Get it on Google Play', url: 'https://play.google.com/store/apps/details?id=com.santayo.saantayokakain' },
       ],
     },
+  ];
+
+  readonly serviceTeasers: string[] = [
+    'Web & Software Development',
+    'AI Integration & Workflow Automation',
+    'Business Process Automation',
+    'Legacy System Modernization',
+    'Cloud Migration & Cost Optimization',
   ];
 
   private scrollHandler?: () => void;

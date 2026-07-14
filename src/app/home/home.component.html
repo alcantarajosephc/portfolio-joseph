@@ -7,6 +7,7 @@
       <li><a href="#skills"     (click)="closeMobileMenu()">Skills</a></li>
       <li><a href="#projects"   (click)="closeMobileMenu()">Projects</a></li>
       <li><a href="#experience" (click)="closeMobileMenu()">Experience</a></li>
+      <li><a href="#services"   (click)="closeMobileMenu()">Services</a></li>
       <li><a href="#contact"    (click)="closeMobileMenu()">Contact</a></li>
       <li><a href="/assets/Alcantara-Joseph-Resume.pdf" target="_blank" class="nav-resume">Resume</a></li>
     </ul>
@@ -20,6 +21,7 @@
   <a href="#skills"     (click)="closeMobileMenu()">Skills</a>
   <a href="#projects"   (click)="closeMobileMenu()">Projects</a>
   <a href="#experience" (click)="closeMobileMenu()">Experience</a>
+  <a href="#services"   (click)="closeMobileMenu()">Services</a>
   <a href="#contact"    (click)="closeMobileMenu()">Contact</a>
   <a href="/assets/Alcantara-Joseph-Resume.pdf" target="_blank" (click)="closeMobileMenu()">Resume</a>
 </div>
@@ -124,6 +126,24 @@
       <a href="/assets/Alcantara-Joseph-Resume.pdf" target="_blank" class="btn-primary">
         View Full Resume
       </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── SERVICES TEASER ── -->
+<section class="services-teaser" id="services">
+  <div class="container">
+    <h2 class="section-heading centered">Also Available For Client Work</h2>
+    <p class="services-teaser-sub">
+      Alongside my full-time role, I take on a limited number of projects for business
+      owners — custom software, AI integration, process automation, legacy modernization,
+      and cloud migration.
+    </p>
+    <div class="services-teaser-chips">
+      <span class="skill-tag" *ngFor="let service of serviceTeasers">{{ service }}</span>
+    </div>
+    <div class="resume-cta">
+      <a routerLink="/services" class="btn-primary">See All Services →</a>
     </div>
   </div>
 </section>
