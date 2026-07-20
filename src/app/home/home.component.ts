@@ -49,7 +49,7 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
     { label: 'Languages',
       skills: ['C#', 'VB.NET', 'TypeScript', 'JavaScript', 'Python', 'PHP', 'HTML & CSS', 'Java'] },
     { label: 'Frameworks & Libraries',
-      skills: ['Angular', '.NET', 'React', 'Laravel', 'Scrapy'] },
+      skills: ['Angular', '.NET', 'React', 'Laravel', 'FastAPI', 'Scrapy'] },
     { label: 'Cloud & DevOps',
       skills: ['AWS Lambda', 'API Gateway', 'DynamoDB', 'SQS', 'CloudWatch', 'Azure App Service', 'Azure SQL'] },
     { label: 'Databases',

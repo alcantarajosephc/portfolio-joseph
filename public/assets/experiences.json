@@ -6,6 +6,10 @@
           "position": "Sr. Full-Stack Developer",
           "company": "IQ BackOffice",
           "description": "Develop and maintain enterprise web applications using C#, Java, .NET, Angular, SQL Server, and AWS for the Finance and Accounting industry.",
+          "bullets": [
+            "Build and support back-office systems for user management, client administration, and business operations",
+            "Implemented CI/CD pipelines for a legacy Windows application using AWS Systems Manager (SSM), automating build and deployment processes"
+          ],
           "skills": [
             "Java",
             "C#",
@@ -13,6 +17,7 @@
             "Angular",
             "TypeScript",
             "JavaScript",
+            "AWS SSM",
             "System Architecture",
             "Performance Optimization"
           ]
@@ -24,10 +29,14 @@
           "company": "Isentia",
           "description": "Design, develop, and maintain enterprise-scale web and data processing systems supporting media intelligence platforms across ANZ and SEA.",
           "bullets": [
+            "Architect and develop Angular applications within a monorepo, powering internal tools for searching, filtering, and analyzing millions of news and online content items daily",
+            "Developed and maintained backend features using Python, FastAPI, and SQLAlchemy to support internal web applications",
             "Own high-volume data pipelines ingesting and processing millions of news/social items daily",
             "Led performance optimizations cutting processing time by 40–50% on critical systems",
+            "Owned multiple backend services end-to-end, including a Press/Newspaper ingestion pipeline, assuming full responsibility after team transitions",
             "Technical escalation point across ~20 internal applications; review code and mentor junior engineers",
-            "Build cloud ingestion/scraping solutions on AWS (Lambda, API Gateway, DynamoDB, SQS, CloudWatch)"
+            "Build cloud ingestion/scraping solutions on AWS (Lambda, API Gateway, DynamoDB, SQS, CloudWatch)",
+            "Collaborate with distributed engineering teams across multiple countries"
           ],
           "skills": [
             "C#",
@@ -37,6 +46,8 @@
             "TypeScript",
             "JavaScript",
             "Python",
+            "FastAPI",
+            "SQLAlchemy",
             "AWS Lambda",
             "API Gateway",
             "DynamoDB",
